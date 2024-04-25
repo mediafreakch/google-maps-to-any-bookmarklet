@@ -20,4 +20,4 @@ northing meters"+t;var M,f,d,p=c/2,m=0,_=0;return p>0&&(M=1e5/Math.pow(10,p),f=t
 When you now go to maps.google.com and then click on the bookmark you just created, it will open the same place in the above mentioned map services.
 
 > [!IMPORTANT]
-> Since the bookmarklet opens multiple tabs uppon click, browsers will initiallly prevent all but 1 tabs from opening (popup blocker). Look for a warning or the corresponding icon in the address bar of your browser, then allow popups for maps.google.com permanently to fix this.
+> Since the bookmarklet opens multiple tabs uppon click, browsers will initiallly prevent all but 1 tabs from opening (popup blocker). Look for a warning or the corresponding icon in the address bar of the google maps tab in your browser, then allow popups for maps.google.com permanently to fix this.
