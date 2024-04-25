@@ -1,0 +1,28 @@
+{
+  "name": "google-maps-to-any-bookmarklet",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Parses WGS84 coordinates from maps.google.com and opens the same location in multiple other maps services such as map.geo.admin.ch, go.geodatenonline.ch and zugmap.ch.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:js && npm run build:bookmarklet",
+    "build:js": "rollup -c",
+    "build:bookmarklet": "echo \"javascript:$(cat build/bundle.js)\" > build/bookmarklet.js",
+    "build:readme": "embedme README.md"
+  },
+  "author": "mediafreakch",
+  "license": "ISC",
+  "dependencies": {
+    "proj4": "^2.11.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/proj4": "^2.5.5",
+    "embedme": "^1.22.1",
+    "rollup": "^4.14.3",
+    "tslib": "^2.6.2"
+  }
+}
