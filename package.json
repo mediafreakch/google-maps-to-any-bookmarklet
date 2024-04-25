@@ -5,7 +5,7 @@
   "description": "Parses WGS84 coordinates from maps.google.com and opens the same location in multiple other maps services such as map.geo.admin.ch, go.geodatenonline.ch and zugmap.ch.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:js && npm run build:bookmarklet",
+    "build": "npm run build:js && npm run build:bookmarklet && npm run build:readme",
     "build:js": "rollup -c",
     "build:bookmarklet": "echo \"javascript:$(cat build/bundle.js)\" > build/bookmarklet.js",
     "build:readme": "embedme README.md"

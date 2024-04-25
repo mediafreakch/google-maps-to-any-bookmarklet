@@ -30,7 +30,7 @@ class LVS95 {
 
 export class MapGeoAdminOpener extends LVS95 implements LinkOpener {
     getUrl(lat: number, long: number): string {
-        return `https://map.geo.admin.ch?E=${lat}&N=${long}&zoom=10`;
+        return `https://map.geo.admin.ch?E=${lat}&N=${long}&zoom=11`;
     }
 
     getCrs(): string {
@@ -51,7 +51,7 @@ export class GoGeodatenOpener extends LVS95 implements LinkOpener {
 export class ZugMapOpener extends LVS95 implements LinkOpener {
     getUrl(lat: number, long: number): string {
         // mit Basiskarte "Ortsplan leicht"
-        return `https://zugmap.ch/bmcl/?project=ZugMap.ch&rotation=0.00&scale=1200&center=${long},${lat}&layers=5b720596-baae-490e-b076-da3dd971454a`
+        return `https://zugmap.ch/bmcl/?project=ZugMap.ch&rotation=0.00&scale=1200&center=${lat},${long}&layers=df8b17c6-f59d-40a3-98b6-d3f66d3248bb&legend=alle%20Themen`
     }
 
     getCrs(): string {
